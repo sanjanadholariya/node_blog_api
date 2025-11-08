@@ -40,6 +40,7 @@ module.exports.loginUser = async(req , res) => {
             // console.log(req.body)
             return res.status(200).json({message : "User Login Successfully",data : token})
         }
+        return res.status(402).json({message : "Invalid credential"})
     } catch (error) {
         console.log(error)
         return res.status(500).json({message : "Internal Server Error"})
