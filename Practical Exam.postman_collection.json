@@ -1,0 +1,1097 @@
+{
+	"info": {
+		"_postman_id": "2892cf9f-3866-49de-a0f9-d1036c31cda1",
+		"name": "Practical Exam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43188321"
+	},
+	"item": [
+		{
+			"name": "Practical_exam",
+			"item": [
+				{
+					"name": "registerUser",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "e",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "e@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "User",
+									"type": "text"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/mitud/Downloads/fashion.webp"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/user/registerUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"user",
+								"registerUser"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "registerUser",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "e",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "e@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "User",
+											"type": "text"
+										},
+										{
+											"key": "profile",
+											"type": "file",
+											"src": "/C:/Users/mitud/Downloads/fashion.webp"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/user/registerUser",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"user",
+										"registerUser"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "41"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29-BMatgReNSnhFbLu1x0VLyZjctgo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Nov 2025 11:30:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User Register Successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "loginUser",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "d@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/user/loginUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"user",
+								"loginUser"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "loginUser",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "d@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/user/loginUser",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"user",
+										"loginUser"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "200"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c8-V9PVLva/lepkuMIWz8oIm2eFIXE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Nov 2025 11:52:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User Login Successfully\",\n    \"data\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMjliMDExN2E3MzVjYzhjNTA0ZWUiLCJpYXQiOjE3NjI2MDI3Nzl9.0oz-oKdQs_aZLDBsUwwdR_rlL_3k2hYmpoiEDsWEn_s\"\n}"
+						}
+					]
+				},
+				{
+					"name": "addArticle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDY5YWIzOGJlODBiZjRlMTU5YWYiLCJpYXQiOjE3NjI1OTM3NDh9.4JH5QAYLin0ljF3R-yYVfTua2msyI9c7piyhqOgrfvw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDY5YWIzOGJlODBiZjRlMTU5YWYiLCJpYXQiOjE3NjI1OTM3NDh9.4JH5QAYLin0ljF3R-yYVfTua2msyI9c7piyhqOgrfvw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "he Future of AI in Daily Life",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Artificial Intelligence has rapidly transformed how we interact with technology. From automated personal assistants to predictive suggestions, AI now plays an active role in our daily routines. Whether it’s recommending what movie to watch next or helping doctors detect diseases faster, the possibilities continue to expand.",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/mitud/Downloads/photo-1532256791400-f02a086ca4bd.avif"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/article/addArticle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"article",
+								"addArticle"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addArticle",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMjliMDExN2E3MzVjYzhjNTA0ZWUiLCJpYXQiOjE3NjI2MDIyMTF9.L2xsZ849lKu3_4eYnMOIqIvUGhvsbgZ_Y3fZ0jtkxV0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "How To Maintain Mental Wellness",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Prioritizing mental wellness is crucial in today’s fast-paced world. Stress, anxiety, and emotional burnout have become increasingly common due to modern work and lifestyle pressures. Building healthy habits like regular physical activity, meditation, and proper sleep can significantly improve mental clarity and emotional balance.",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/mitud/Downloads/41kTx6eMvtL.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/article/addArticle",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"article",
+										"addArticle"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "39"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"27-gE0bR0ntxVmOqA0Cv4xZT1+QK/U\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Nov 2025 11:46:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Article add successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "allArticle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDY5YWIzOGJlODBiZjRlMTU5YWYiLCJpYXQiOjE3NjI1OTM3NDh9.4JH5QAYLin0ljF3R-yYVfTua2msyI9c7piyhqOgrfvw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDY5YWIzOGJlODBiZjRlMTU5YWYiLCJpYXQiOjE3NjI1OTM3NDh9.4JH5QAYLin0ljF3R-yYVfTua2msyI9c7piyhqOgrfvw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/api/article/allArticle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"article",
+								"allArticle"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "allArticle",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDY5YWIzOGJlODBiZjRlMTU5YWYiLCJpYXQiOjE3NjI1OTM3NDh9.4JH5QAYLin0ljF3R-yYVfTua2msyI9c7piyhqOgrfvw",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8001/api/article/allArticle",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"article",
+										"allArticle"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "781"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"30d-aUVY1k/PtC+n9jsQcfG9w4FrJmk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Nov 2025 09:48:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"All article fetched successfully \",\n    \"data\": [\n        {\n            \"_id\": \"690f11be2016ace4ea86424d\",\n            \"title\": \"he Future of AI in Daily Life\",\n            \"description\": \"Artificial Intelligence has rapidly transformed how we interact with technology. From automated personal assistants to predictive suggestions, AI now plays an active role in our daily routines. Whether it’s recommending what movie to watch next or helping doctors detect diseases faster, the possibilities continue to expand.\",\n            \"author_id\": {\n                \"_id\": \"690f069ab38be80bf4e159af\",\n                \"name\": \"a\",\n                \"email\": \"a@gmail.com\",\n                \"role\": \"Admin\",\n                \"profile\": \"profile-1762592410020.png\",\n                \"createdAt\": \"2025-11-08T09:00:10.117Z\",\n                \"updatedAt\": \"2025-11-08T09:00:10.117Z\"\n            },\n            \"isDelete\": false,\n            \"createdAt\": \"2025-11-08T09:47:42.242Z\",\n            \"updatedAt\": \"2025-11-08T09:47:42.242Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteArticle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDY5YWIzOGJlODBiZjRlMTU5YWYiLCJpYXQiOjE3NjI1OTYwODh9.ELN-iwyQwDe9-y5_timjKZmAn1ibX_bim6vg8lgyFO4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDY5YWIzOGJlODBiZjRlMTU5YWYiLCJpYXQiOjE3NjI1OTYwODh9.ELN-iwyQwDe9-y5_timjKZmAn1ibX_bim6vg8lgyFO4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/api/article/deleteArticle/690f11be2016ace4ea86424d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"article",
+								"deleteArticle",
+								"690f11be2016ace4ea86424d"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteArticle",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDY5YWIzOGJlODBiZjRlMTU5YWYiLCJpYXQiOjE3NjI1OTYwODh9.ELN-iwyQwDe9-y5_timjKZmAn1ibX_bim6vg8lgyFO4",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8001/api/article/deleteArticle/690f11be2016ace4ea86424d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"article",
+										"deleteArticle",
+										"690f11be2016ace4ea86424d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "36"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"24-CWmJkbSJ7DIApSpG2P1eSyb0Bww\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Nov 2025 10:04:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Article Delete Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "editArticle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMjliMDExN2E3MzVjYzhjNTA0ZWUiLCJpYXQiOjE3NjI2MDI3Nzl9.0oz-oKdQs_aZLDBsUwwdR_rlL_3k2hYmpoiEDsWEn_s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMjliMDExN2E3MzVjYzhjNTA0ZWUiLCJpYXQiOjE3NjI2MDI3Nzl9.0oz-oKdQs_aZLDBsUwwdR_rlL_3k2hYmpoiEDsWEn_s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Top 10 Healthy Breakfast",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/mitud/Downloads/photo-1432821596592-e2c18b78144f.avif"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/article/editArticle/690f2d553ab95defd91ab3b9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"article",
+								"editArticle",
+								"690f2d553ab95defd91ab3b9"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "editArticle",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMjliMDExN2E3MzVjYzhjNTA0ZWUiLCJpYXQiOjE3NjI2MDI3Nzl9.0oz-oKdQs_aZLDBsUwwdR_rlL_3k2hYmpoiEDsWEn_s",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Top 10 Healthy Breakfast",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/mitud/Downloads/photo-1432821596592-e2c18b78144f.avif"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/article/editArticle/690f2d553ab95defd91ab3b9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"article",
+										"editArticle",
+										"690f2d553ab95defd91ab3b9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "599"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"257-ngOqwltuOr+Ifw/nxlCejzok5ts\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Nov 2025 12:03:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Article Edit Success\",\n    \"data\": {\n        \"_id\": \"690f2d553ab95defd91ab3b9\",\n        \"title\": \"Top 10 Healthy Breakfast\",\n        \"image\": \"image-1762602325028.avif\",\n        \"description\": \"Freelancing has become an attractive career choice for many individuals seeking flexibility and independence. It allows you to work from wherever you want while choosing the projects that align with your interests and skills. However, starting a freelancing journey requires preparation and commitment.\",\n        \"author_id\": \"690f29b0117a735cc8c504ee\",\n        \"isDelete\": false,\n        \"createdAt\": \"2025-11-08T11:45:25.044Z\",\n        \"updatedAt\": \"2025-11-08T12:03:50.449Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "addComment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDZiN2IzOGJlODBiZjRlMTU5YjIiLCJpYXQiOjE3NjI1OTY3Njd9.82But5T5YI44loO3wAQ6uO-skb28AZs0vh3AxpdPSOE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDZiN2IzOGJlODBiZjRlMTU5YjIiLCJpYXQiOjE3NjI1OTY3Njd9.82But5T5YI44loO3wAQ6uO-skb28AZs0vh3AxpdPSOE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "message",
+									"value": "yoga also help to get peace",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/comments/addComment/690f2d993ab95defd91ab3bf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"comments",
+								"addComment",
+								"690f2d993ab95defd91ab3bf"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addComment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDZiN2IzOGJlODBiZjRlMTU5YjIiLCJpYXQiOjE3NjI1OTY3Njd9.82But5T5YI44loO3wAQ6uO-skb28AZs0vh3AxpdPSOE",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "message",
+											"value": "nice article",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/comments/addComment/690f1897c278e76f0820335a",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"comments",
+										"addComment",
+										"690f1897c278e76f0820335a"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "452"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c4-xDd6MaStEgiBRTd8HnH80QKPXxU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Nov 2025 11:07:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Comment added successfully\",\n    \"data\": {\n        \"_id\": \"690f2485b53d4ff6a65ed437\",\n        \"article\": \"690f1897c278e76f0820335a\",\n        \"comments\": [\n            {\n                \"user\": \"690f06b7b38be80bf4e159b2\",\n                \"message\": \"nice and helpful article\",\n                \"isDelete\": false,\n                \"_id\": \"690f2485b53d4ff6a65ed438\",\n                \"createdAt\": \"2025-11-08T11:07:49.331Z\"\n            },\n            {\n                \"user\": \"690f06b7b38be80bf4e159b2\",\n                \"message\": \"nice article\",\n                \"isDelete\": false,\n                \"_id\": \"690f248db53d4ff6a65ed43d\",\n                \"createdAt\": \"2025-11-08T11:07:57.684Z\"\n            }\n        ],\n        \"__v\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "allComment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDZiN2IzOGJlODBiZjRlMTU5YjIiLCJpYXQiOjE3NjI1OTY3Njd9.82But5T5YI44loO3wAQ6uO-skb28AZs0vh3AxpdPSOE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDZiN2IzOGJlODBiZjRlMTU5YjIiLCJpYXQiOjE3NjI1OTY3Njd9.82But5T5YI44loO3wAQ6uO-skb28AZs0vh3AxpdPSOE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "message",
+									"value": "nice article",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/comments/allComment/690f1897c278e76f0820335a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"comments",
+								"allComment",
+								"690f1897c278e76f0820335a"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "allComment",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDZiN2IzOGJlODBiZjRlMTU5YjIiLCJpYXQiOjE3NjI1OTY3Njd9.82But5T5YI44loO3wAQ6uO-skb28AZs0vh3AxpdPSOE",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "message",
+											"value": "nice article",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8001/api/comments/allComment/690f1897c278e76f0820335a",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"comments",
+										"allComment",
+										"690f1897c278e76f0820335a"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "462"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1ce-k0ODcOqaQXw2vjdSQ9NHfMF6wE4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Nov 2025 11:12:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"All comments fetched successfully \",\n    \"data\": [\n        {\n            \"_id\": \"690f2485b53d4ff6a65ed437\",\n            \"article\": \"690f1897c278e76f0820335a\",\n            \"comments\": [\n                {\n                    \"isDelete\": false,\n                    \"user\": \"690f06b7b38be80bf4e159b2\",\n                    \"message\": \"nice and helpful article\",\n                    \"_id\": \"690f2485b53d4ff6a65ed438\",\n                    \"createdAt\": \"2025-11-08T11:07:49.331Z\"\n                },\n                {\n                    \"isDelete\": false,\n                    \"user\": \"690f06b7b38be80bf4e159b2\",\n                    \"message\": \"nice article\",\n                    \"_id\": \"690f248db53d4ff6a65ed43d\",\n                    \"createdAt\": \"2025-11-08T11:07:57.684Z\"\n                }\n            ],\n            \"__v\": 1\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteComment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDZiN2IzOGJlODBiZjRlMTU5YjIiLCJpYXQiOjE3NjI1OTY3Njd9.82But5T5YI44loO3wAQ6uO-skb28AZs0vh3AxpdPSOE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDZiN2IzOGJlODBiZjRlMTU5YjIiLCJpYXQiOjE3NjI1OTY3Njd9.82But5T5YI44loO3wAQ6uO-skb28AZs0vh3AxpdPSOE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/api/comments/deleteComment/690f06b7b38be80bf4e159b2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"comments",
+								"deleteComment",
+								"690f06b7b38be80bf4e159b2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteComment",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OTBmMDZiN2IzOGJlODBiZjRlMTU5YjIiLCJpYXQiOjE3NjI1OTY3Njd9.82But5T5YI44loO3wAQ6uO-skb28AZs0vh3AxpdPSOE",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8001/api/comments/deleteComment/690f06b7b38be80bf4e159b2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8001",
+									"path": [
+										"api",
+										"comments",
+										"deleteComment",
+										"690f06b7b38be80bf4e159b2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "36"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"24-dYBhTkgvFOKtUC1h54C/eQOcSGE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Nov 2025 11:27:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Comment Delete Success\"\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
