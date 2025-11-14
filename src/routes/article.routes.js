@@ -8,7 +8,7 @@ const routes = express();
 
 routes.post('/addArticle',verifyToken,verifyRole('Admin'),imageUpload.single('image'),addArticle)
 routes.get('/allComments/:id',verifyToken,verifyRole('Admin','User'),allArticle)
-routes.delete('/deleteArticle/:id',verifyToken,verifyRole('Admin'),deleteArticle)
+routes.delete('/allArticle',verifyToken,verifyRole('Admin'),deleteArticle)
 routes.put('/editArticle/:id',verifyToken,verifyRole('Admin'),imageUpload.single('image'),editArticle)
 
 module.exports = routes;
